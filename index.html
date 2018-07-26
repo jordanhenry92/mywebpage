@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>My WebPage!</title>
+
+</head>
+<body>
+
+	<aside>
+		<figure>
+			<div id="avatar"></div>
+			<figcaption>Jordan Henry</figcaption>
+			
+		</figure>
+		<img id="burger" src="images/menu.png">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<main>
+		<h1>I'm a Computer Science student</h1>
+		<p>Currently studying at Carleton University, I already have a degree in <br>
+		Biology and am looking to further my Programming knowledge.</p>
+
+		<a href="#" class="cta">My Portfolio</a>
+	</main>
+
+	<script type="text/javascript">
+		
+		(function() {
+			var menu = document.querySelector('ul');
+			var menulink = document.querySelector('#burger');
+
+			menulink.addEventListener('click', function(e) {
+				menu.classList.toggle('active');
+				e.preventDefault();
+			});
+		})();
+
+	</script>
+
+</body>
+</html>
